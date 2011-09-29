@@ -1,0 +1,8 @@
+rds_instance_id: <%= node[:rds_s3_backups][:rds_instance_id] %>
+s3_bucket: <%= node[:rds_s3_backups][:s3_bucket] %>
+aws_access_key_id: <%= @aws_creds['access_key_id'] %>
+aws_secret_access_key: <%= @aws_creds['secret_access_key'] %>
+mysql_database: <%= node[:rds_s3_backups][:mysql_database] %>
+mysql_username: <%= @mysql_creds['username'] %>
+mysql_password: <%= @mysql_creds['password'] %>
+dump_ttl: 40
